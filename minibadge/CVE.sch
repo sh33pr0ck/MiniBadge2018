@@ -1,0 +1,265 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L saintcon-minibadge:SAINTCON-Minibadge U2
+U 1 1 5B909526
+P 5300 3050
+F 0 "U2" H 5300 3637 60  0000 C CNN
+F 1 "SAINTCON-Minibadge" H 5300 3531 60  0000 C CNN
+F 2 "minibadge_kicad:SAINTCON-Minibadge" H 5300 3100 60  0001 C CNN
+F 3 "" H 5300 3100 60  0001 C CNN
+	1    5300 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR05
+U 1 1 5B9095C8
+P 4650 2900
+F 0 "#PWR05" H 4650 2750 50  0001 C CNN
+F 1 "+3V3" V 4665 3028 50  0000 L CNN
+F 2 "" H 4650 2900 50  0001 C CNN
+F 3 "" H 4650 2900 50  0001 C CNN
+	1    4650 2900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR01
+U 1 1 5B9095FB
+P 2300 1950
+F 0 "#PWR01" H 2300 1800 50  0001 C CNN
+F 1 "+5V" V 2315 2078 50  0000 L CNN
+F 2 "" H 2300 1950 50  0001 C CNN
+F 3 "" H 2300 1950 50  0001 C CNN
+	1    2300 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5B9097E0
+P 3250 3900
+F 0 "#PWR03" H 3250 3650 50  0001 C CNN
+F 1 "GND" H 3255 3727 50  0000 C CNN
+F 2 "" H 3250 3900 50  0001 C CNN
+F 3 "" H 3250 3900 50  0001 C CNN
+	1    3250 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCU_Microchip_ATtiny:ATtiny85-20SU U1
+U 1 1 5B9098F0
+P 3250 3200
+F 0 "U1" H 2720 3246 50  0000 R CNN
+F 1 "ATtiny85-20SU" H 2720 3155 50  0000 R CNN
+F 2 "Package_SO:SOIJ-8_5.3x5.3mm_P1.27mm" H 3250 3200 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf" H 3250 3200 50  0001 C CNN
+	1    3250 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_RAGB D1
+U 1 1 5B90A359
+P 1950 1950
+F 0 "D1" H 1950 2447 50  0000 C CNN
+F 1 "LED_RAGB" H 1950 2356 50  0000 C CNN
+F 2 "LED_SMD:LED_Avago_PLCC4_3.2x2.8mm_CW" H 1950 1900 50  0001 C CNN
+F 3 "~" H 1950 1900 50  0001 C CNN
+	1    1950 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R3
+U 1 1 5B90A3D8
+P 1400 2150
+F 0 "R3" V 1195 2150 50  0000 C CNN
+F 1 "R_US" V 1286 2150 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 1440 2140 50  0001 C CNN
+F 3 "~" H 1400 2150 50  0001 C CNN
+	1    1400 2150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3250 3800 3250 3900
+Wire Wire Line
+	3250 2600 3250 2450
+Wire Wire Line
+	3850 2900 4000 2900
+Wire Wire Line
+	3850 3000 4000 3000
+Wire Wire Line
+	3850 3100 4000 3100
+Wire Wire Line
+	3850 3200 4000 3200
+Wire Wire Line
+	3850 3300 4000 3300
+Wire Wire Line
+	3850 3400 4000 3400
+Wire Wire Line
+	5800 2800 5950 2800
+Wire Wire Line
+	5800 2900 5950 2900
+Wire Wire Line
+	5800 3000 5950 3000
+Wire Wire Line
+	5800 3100 5950 3100
+Wire Wire Line
+	5800 3300 5950 3300
+Wire Wire Line
+	5800 3400 5950 3400
+Wire Wire Line
+	4800 2800 4650 2800
+Wire Wire Line
+	4800 2900 4650 2900
+Wire Wire Line
+	4800 3000 4650 3000
+Wire Wire Line
+	4800 3200 4650 3200
+Wire Wire Line
+	4800 3300 4650 3300
+Wire Wire Line
+	4800 3400 4650 3400
+Wire Wire Line
+	2150 1950 2300 1950
+Wire Wire Line
+	1750 1750 1550 1750
+Wire Wire Line
+	1750 1950 1550 1950
+Wire Wire Line
+	1750 2150 1550 2150
+$Comp
+L Device:R_US R1
+U 1 1 5B90C4C0
+P 1400 1750
+F 0 "R1" V 1195 1750 50  0000 C CNN
+F 1 "R_US" V 1286 1750 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 1440 1740 50  0001 C CNN
+F 3 "~" H 1400 1750 50  0001 C CNN
+	1    1400 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R2
+U 1 1 5B90C4E5
+P 1400 1950
+F 0 "R2" V 1195 1950 50  0000 C CNN
+F 1 "R_US" V 1286 1950 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 1440 1940 50  0001 C CNN
+F 3 "~" H 1400 1950 50  0001 C CNN
+	1    1400 1950
+	0    1    1    0   
+$EndComp
+Text Label 4000 2900 0    50   ~ 0
+PB0
+Text Label 4000 3000 0    50   ~ 0
+PB1
+Text Label 4000 3100 0    50   ~ 0
+PB2
+Text Label 4000 3200 0    50   ~ 0
+PB3
+Text Label 4000 3300 0    50   ~ 0
+PB4
+Text Label 4000 3400 0    50   ~ 0
+PB5
+$Comp
+L power:+5V #PWR02
+U 1 1 5B90EC93
+P 3250 2450
+F 0 "#PWR02" H 3250 2300 50  0001 C CNN
+F 1 "+5V" H 3265 2623 50  0000 C CNN
+F 2 "" H 3250 2450 50  0001 C CNN
+F 3 "" H 3250 2450 50  0001 C CNN
+	1    3250 2450
+	1    0    0    -1  
+$EndComp
+Text Label 5950 3000 0    50   ~ 0
+PB0
+Text Label 5950 2800 0    50   ~ 0
+PB1
+Text Label 5950 2900 0    50   ~ 0
+PB2
+Text Label 5950 3400 0    50   ~ 0
+PB3
+Text Label 5950 3300 0    50   ~ 0
+PB4
+$Comp
+L power:+5V #PWR04
+U 1 1 5B90ED73
+P 4650 2800
+F 0 "#PWR04" H 4650 2650 50  0001 C CNN
+F 1 "+5V" V 4665 2928 50  0000 L CNN
+F 2 "" H 4650 2800 50  0001 C CNN
+F 3 "" H 4650 2800 50  0001 C CNN
+	1    4650 2800
+	0    -1   -1   0   
+$EndComp
+Text Label 5950 3100 0    50   ~ 0
+PB5
+$Comp
+L power:+3V3 #PWR06
+U 1 1 5B90EDFD
+P 4650 3000
+F 0 "#PWR06" H 4650 2850 50  0001 C CNN
+F 1 "+3V3" V 4665 3128 50  0000 L CNN
+F 2 "" H 4650 3000 50  0001 C CNN
+F 3 "" H 4650 3000 50  0001 C CNN
+	1    4650 3000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 5B90EE51
+P 4650 3400
+F 0 "#PWR09" H 4650 3150 50  0001 C CNN
+F 1 "GND" V 4650 3200 50  0000 C CNN
+F 2 "" H 4650 3400 50  0001 C CNN
+F 3 "" H 4650 3400 50  0001 C CNN
+	1    4650 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 5B90EE6F
+P 4650 3300
+F 0 "#PWR08" H 4650 3050 50  0001 C CNN
+F 1 "GND" V 4655 3172 50  0000 R CNN
+F 2 "" H 4650 3300 50  0001 C CNN
+F 3 "" H 4650 3300 50  0001 C CNN
+	1    4650 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 5B90EE86
+P 4650 3200
+F 0 "#PWR07" H 4650 2950 50  0001 C CNN
+F 1 "GND" V 4655 3072 50  0000 R CNN
+F 2 "" H 4650 3200 50  0001 C CNN
+F 3 "" H 4650 3200 50  0001 C CNN
+	1    4650 3200
+	0    1    1    0   
+$EndComp
+Text Label 900  1750 0    50   ~ 0
+PB5
+Text Label 900  1950 0    50   ~ 0
+PB4
+Text Label 900  2150 0    50   ~ 0
+PB3
+Wire Wire Line
+	1250 1750 900  1750
+Wire Wire Line
+	1250 1950 900  1950
+Wire Wire Line
+	1250 2150 900  2150
+$EndSCHEMATC
