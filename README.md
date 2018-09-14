@@ -22,10 +22,15 @@ Connect the following between the header on the minibadge and the MEGA:
 Mini		MEGA
 
 GND	-	GND
+
 5V 	-	5V
+
 MISO	-	50
+
 MOSI	-	51
+
 CS	-	53
+
 SCK	-	52
 
 Connect a 10uf capacitor between RESET and GND on the MEGA.
