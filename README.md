@@ -40,3 +40,13 @@ Select code and upload.
 ATTiny Pins -
 
 Pins 5, 4, and 3 control the LEDs.
+
+I used code based on the following: https://cdn-learn.adafruit.com/downloads/pdf/adafruit-arduino-lesson-3-rgb-leds.pdf
+
+Just updated the pins to the following:
+
+const int redPin = 2;
+const int greenPin = 3;
+const int bluePin = 4;
+
+
